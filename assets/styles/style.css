@@ -43,13 +43,10 @@ main {
   grid-area: main;
   display: grid;
   height: auto;
-  grid-template: repeat(auto-fit, minmax(16rem, 1fr)) / repeat(
-      auto-fit,
-      minmax(18rem, 1fr)
-    );
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 1rem;
   margin: 40px;
 }
 aside {
