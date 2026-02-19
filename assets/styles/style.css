@@ -1,0 +1,19 @@
+body {
+  display: grid;
+  grid-template-areas:
+    "a a a a"
+    "c b b b"
+    "d d d d";
+}
+header {
+  grid-area: "a";
+}
+main {
+  grid-area: "b";
+}
+aside {
+  grid-area: "c";
+}
+footer {
+  grid-area: "d";
+}
