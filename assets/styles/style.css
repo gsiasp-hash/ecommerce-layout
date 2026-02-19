@@ -1,19 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 body {
   display: grid;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #8d99ae;
+  font-family:
+    'Open Sans', sans-serif;
   grid-template-areas:
-    "a a a a"
-    "c b b b"
-    "d d d d";
+    "header header header header"
+    "aside main main main"
+    "footer footer footer footer";
 }
 header {
-  grid-area: "a";
+  grid-area: header;
+  height: 5vh;
+  width: 100%;
+  background-color: #2b2d42;
+  box-shadow: 2px 2px 5px black;
+  font-size: 1rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  
 }
 main {
-  grid-area: "b";
+  grid-area: main;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 80vh;
+  background-color: #8d99ae;
 }
 aside {
-  grid-area: "c";
+  grid-area: aside;
+  background-color: #edf2f4;
+  padding: 20px;
+  height: 80vh;
+  text-align: start;
 }
 footer {
-  grid-area: "d";
+  grid-area: footer;
+  background-color: #2b2d42;
+  height: 15vh;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 12rem;
+  justify-content: center;
+  color: white;
 }
+.producto {
+  width: 15rem;
+  height: 17rem;
+  background-color: #edf2f4;
+  box-shadow: 0 0 5px black;
+  border-radius: 20px;
+  padding: 5px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.producto button {
+  margin-top: 10px;
+  padding: 5px;
+  width: 80%;
+  background-color: #d90429;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.producto button:hover {
+  background-color: #ef233c;
