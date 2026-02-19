@@ -46,8 +46,8 @@ main {
   grid-template-columns: auto auto auto auto;
   justify-content: center;
   align-items: center;
-  gap: 20px 30px;
-  margin: 20px;
+  gap: 30px 40px;
+  margin : 70px 0px;
 }
 aside {
   grid-area: aside;
@@ -70,7 +70,7 @@ aside a {
 aside a:hover {
   color: #1a1c2c;
  transform: translateX(2px);
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 footer {
   grid-area: footer;
