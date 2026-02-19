@@ -46,7 +46,7 @@ main {
   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 1.8rem;
   margin: 40px;
 }
 aside {
