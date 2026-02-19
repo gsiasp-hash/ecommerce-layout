@@ -12,6 +12,8 @@ body {
 }
 nav {
   grid-area: nav;
+  position: sticky;
+  top: 0;
   height: auto;
   padding: 15px 100px;
   background: rgb(6, 6, 6);
@@ -21,6 +23,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   gap: 20px;
+  z-index: 9999;
 }
 nav h1 {
   margin: 0;
@@ -117,6 +120,7 @@ footer {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   transform: scale(1.003);
   transition: all 0.2s ease-in-out;
+  z-index: 0;
 }
 .producto button {
   margin-top: 10px;
