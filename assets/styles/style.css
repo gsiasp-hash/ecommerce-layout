@@ -50,10 +50,11 @@ footer {
 }
 .producto {
   background-color: #edf2f4;
-  box-shadow: 0 0 5px rgb(146, 181, 245);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.29);
   max-width: 16rem;
   border-radius: 20px;
-  padding: 10px;
+  padding: 0;
+  overflow: hidden;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -61,12 +62,13 @@ footer {
 }
 .producto button {
   margin-top: 10px;
-  padding: 5px;
+  padding: 15px;
   width: 80%;
   background-color: #2b2d42;
   color: white;
   border: none;
   cursor: pointer;
+  border-radius: 40px;
 }
 .producto button:hover {
   background-color: #1a1c2c;
@@ -76,13 +78,14 @@ footer {
   height: 15rem;
   margin: 0;
   object-fit: cover;
+  display: block;
+  object-position: center center;
 }
 .producto p {
-  margin: 0;
+  margin: 10px 5px;
   font-size: 0.8rem;
 }
 .producto h2 {
   margin: 0;
   font-size: 1.5rem;
 }
-
