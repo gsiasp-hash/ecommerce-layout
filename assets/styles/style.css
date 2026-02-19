@@ -43,18 +43,21 @@ main {
   grid-area: main;
   display: grid;
   height: auto;
-  grid-template-columns: auto auto auto auto;
+  grid-template: repeat(auto-fit, minmax(16rem, 1fr)) / repeat(
+      auto-fit,
+      minmax(18rem, 1fr)
+    );
   justify-content: center;
   align-items: center;
-  gap: 30px 40px;
-  margin : 70px 0px;
+  gap: 30px;
+  margin: 40px;
 }
 aside {
   grid-area: aside;
   background-color: rgb(252, 249, 249);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.482);
   padding: 20px;
-  min-width: 16rem;
+  max-width: 16rem;
   text-align: start;
   color: #2b2d42;
   display: flex;
@@ -69,7 +72,7 @@ aside a {
 }
 aside a:hover {
   color: #1a1c2c;
- transform: translateX(2px);
+  transform: translateX(2px);
   transition: all 0.3s ease-in-out;
 }
 footer {
@@ -104,8 +107,8 @@ footer {
 .producto {
   background-color: white;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.29);
-  width: 16rem;
-  border-radius: 20px;
+  width: 18rem;
+  border-radius: 15px;
   padding: 0;
   overflow: hidden;
   display: flex;
