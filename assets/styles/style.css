@@ -3,7 +3,7 @@
 body {
   display: grid;
   margin: 0;
-  background-color: #8d99ae;
+  background: linear-gradient(to bottom, #828df4, #4f4fa1);
   font-family: "Open Sans", sans-serif;
   grid-template-areas:
     "header header header header"
@@ -14,7 +14,7 @@ header {
   grid-area: header;
   height: 5vh;
   padding: 0 20px;
-  background-color: #2b2d42;
+  background: linear-gradient(to right, #2b2d42, #4f4fa1);
   font-size: 1rem;
   color: white;
   display: flex;
@@ -29,14 +29,14 @@ main {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  background-color: #8d99ae;
   margin-left: 10px;
 }
 aside {
   grid-area: aside;
-  background-color: #edf2f4;
+  background-color: #2b2d42;
   padding: 20px;
   text-align: start;
+  color: white;
 }
 footer {
   grid-area: footer;
@@ -50,7 +50,8 @@ footer {
 }
 .producto {
   background-color: #edf2f4;
-  box-shadow: 0 0 5px black;
+  box-shadow: 0 0 5px rgb(146, 181, 245);
+  max-width: 16rem;
   border-radius: 20px;
   padding: 10px;
   display: flex;
@@ -62,13 +63,13 @@ footer {
   margin-top: 10px;
   padding: 5px;
   width: 80%;
-  background-color: #d90429;
+  background-color: #2b2d42;
   color: white;
   border: none;
   cursor: pointer;
 }
 .producto button:hover {
-  background-color: #ef233c;
+  background-color: #1a1c2c;
 }
 .producto img {
   width: 100%;
@@ -84,3 +85,4 @@ footer {
   margin: 0;
   font-size: 1.5rem;
 }
+
