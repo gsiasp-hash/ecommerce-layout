@@ -3,8 +3,6 @@
 body {
   display: grid;
   margin: 0;
-  height: 100vh;
-  width: 100vw;
   background-color: #8d99ae;
   font-family: "Open Sans", sans-serif;
   grid-template-areas:
@@ -15,9 +13,8 @@ body {
 header {
   grid-area: header;
   height: 5vh;
-  width: 100%;
+  padding: 0 20px;
   background-color: #2b2d42;
-  box-shadow: 2px 2px 5px black;
   font-size: 1rem;
   color: white;
   display: flex;
@@ -27,24 +24,24 @@ header {
 main {
   grid-area: main;
   display: grid;
+  height: 90vh;
   grid-template-columns: auto auto auto auto;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  height: 80vh;
   background-color: #8d99ae;
+  margin-left: 10px;
 }
 aside {
   grid-area: aside;
   background-color: #edf2f4;
   padding: 20px;
-  height: 80vh;
   text-align: start;
 }
 footer {
   grid-area: footer;
   background-color: #2b2d42;
-  height: 15vh;
+  height: 300px;
   display: flex;
   flex-flow: row wrap;
   gap: 12rem;
@@ -52,17 +49,14 @@ footer {
   color: white;
 }
 .producto {
-  width: 15rem;
-  height: 20rem;
   background-color: #edf2f4;
   box-shadow: 0 0 5px black;
   border-radius: 20px;
-  padding: 5px;
+  padding: 10px;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
-  text-align: center;
 }
 .producto button {
   margin-top: 10px;
@@ -78,7 +72,15 @@ footer {
 }
 .producto img {
   width: 100%;
-  height: 50%;
+  height: 15rem;
+  margin: 0;
   object-fit: cover;
-  border-radius: 20px;
+}
+.producto p {
+  margin: 0;
+  font-size: 0.8rem;
+}
+.producto h2 {
+  margin: 0;
+  font-size: 1.5rem;
 }
