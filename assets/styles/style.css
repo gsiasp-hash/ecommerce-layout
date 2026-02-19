@@ -3,7 +3,7 @@
 body {
   display: grid;
   margin: 0;
-  background: linear-gradient(to bottom, #828df4, #4f4fa1);
+  background-color: rgb(252, 249, 249);
   font-family: "Open Sans", sans-serif;
   grid-template-areas:
     "header header header header"
@@ -14,12 +14,21 @@ header {
   grid-area: header;
   height: 5vh;
   padding: 0 20px;
-  background: linear-gradient(to right, #2b2d42, #4f4fa1);
+  background: rgb(6, 6, 6);
   font-size: 1rem;
   color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+header p {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 500;
 }
 main {
   grid-area: main;
@@ -33,10 +42,11 @@ main {
 }
 aside {
   grid-area: aside;
-  background-color: #2b2d42;
+  background-color: rgb(252, 249, 249);
   padding: 20px;
   text-align: start;
-  color: white;
+  color: #2b2d42;
+  border-right: #1a1c2c solid 1px;
 }
 footer {
   grid-area: footer;
