@@ -46,8 +46,7 @@ main {
   grid-area: main;
   display: grid;
   height: auto;
-  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 18rem));
   align-items: center;
   gap: 1.8rem;
   margin: 40px;
@@ -72,7 +71,7 @@ aside a {
 }
 aside a:hover {
   color: #1a1c2c;
-  transform: translateX(2px);
+  transform: translateX(4px);
   transition: all 0.3s ease-in-out;
 }
 footer {
