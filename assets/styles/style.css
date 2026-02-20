@@ -134,9 +134,10 @@ footer {
   border-radius: 40px;
 }
 .producto button:hover {
-  background-color: #1a1c2c;
-  transform: scale(1.03);
-  transition: all 0.2s ease-in-out;
+  background-color: #eff0f7;
+  border: 1px solid #000000;
+  color: #000000;
+  transition: all 0.3s ease-in-out;
 }
 .producto img {
   width: 100%;
